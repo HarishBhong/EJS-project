@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ToDo list</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="box">
+      <h1>ToDo list</h1>
+    </div>
+    <div class="box">
+       
+      <%  for( var i=0 ; i < ejes.length ; i++){ %>   <!-- javscript code in ejs : every line must start with '<%' and end with '%>' eg: <% "your js code" %>  -->
+          <p><%= ejes[i] %></p>
+
+      <% } %>
+      <!-- inside the for loop we are traversing all elements inside the array -->
+      <form action="/" method="POST">
+      <input type="text" name="ele1" placeholder="Enter the task">
+      <button type="submit">+</button>
+
+      </form>
+    </div>
+  </body>
+</html>
