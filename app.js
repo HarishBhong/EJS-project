@@ -8,7 +8,7 @@ const bodyParser = require("body-parser");
 var app = express();
 app.set("view engine","ejs");
 
-//command for express for storing static files
+//command for express for storing static files. all the static files like css, javascript are stored in public folder
 app.use(express.static('public'));
 
 app.use(express.urlencoded({extended:true}));
